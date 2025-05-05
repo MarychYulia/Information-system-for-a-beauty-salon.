@@ -1,0 +1,204 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Сайт Салону Краси" id="0">
+    <mxGraphModel dx="1145" dy="1789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="53lw-ioC29n_L8rf6pGG-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="main" target="services">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="main" target="booking">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="main" target="cabinet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.556;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="main" target="auth">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-280.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main" value="Головна сторінка" style="rounded=1;fillColor=#BBDEFB" parent="1" vertex="1">
+          <mxGeometry x="400" y="-310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="services" target="masters">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="10" />
+              <mxPoint x="380" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="services" value="Послуги" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="170" y="-20" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="masters" value="Майстри" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="410" y="80" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="reviews" value="Відгуки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="100" y="180" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="auth" target="auth_a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" value="Авторизація" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="70" y="-200" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_main_register" style="endArrow=none;" parent="1" source="main" target="register" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cabinet" value="Особистий кабінет" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="630" y="-200" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="admin" target="masters">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="-100" />
+              <mxPoint x="820" y="240" />
+              <mxPoint x="590" y="240" />
+              <mxPoint x="590" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="admin" target="cabinet_c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" value="Адмін-панель" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="850" y="-130" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="contacts" value="Контакти" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="414" y="170" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="services_s1" value="Перукарські" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="90" y="40" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_s1" style="endArrow=none;" parent="1" source="services" target="services_s1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="services_s2" value="Манікюр/Педикюр" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="230" y="40" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_s2" style="endArrow=none;" parent="1" source="services" target="services_s2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="services_s3" value="Косметологія" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="150" y="80" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_b1" value="Обрати послугу" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="620" y="70" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_booking_b1" style="endArrow=none;" parent="1" source="booking" target="booking_b1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_b2" value="Обрати майстра" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="620" y="110" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_b3" value="Обрати дату/час" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="620" y="150" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="auth_a2" value="Пароль" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="60" y="-70" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="register_r1" value="Ім’я" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="400" y="-150" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_register_r1" style="endArrow=none;" parent="1" source="register" target="register_r1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="register_r2" value="Прізвище" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="400" y="-110" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="register_r3" value="Телефон" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="400" y="-70" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="register_r4" value="Email" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="400" y="-30" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cabinet_c1" style="endArrow=none;" parent="1" source="cabinet" target="cabinet_c1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cabinet_c2" value="Історія оплат" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="400" y="10" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_ad1" value="Керування працівниками" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="840" y="-50" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_admin_ad1" style="endArrow=none;" parent="1" source="admin" target="admin_ad1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_ad2" value="Керування послугами" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="840" y="-10" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_ad3" value="Перегляд записів" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="840" y="30" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_ad4" value="Аналітика" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="840" y="70" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="contacts_ct1" value="Адреса" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="404" y="250" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_contacts_ct1" style="endArrow=none;" parent="1" source="contacts" target="contacts_ct1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="contacts_ct2" value="Телефон" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="404" y="290" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="contacts_ct3" value="Соціальні мережі" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="404" y="330" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="contacts_ct4" value="Карта" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="404" y="370" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="booking" value="Запис на послугу" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="630" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-5" value="" style="endArrow=none;" edge="1" parent="1" source="cabinet_c3" target="cabinet_c1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="112" as="sourcePoint" />
+            <mxPoint x="840" y="68" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cabinet_c1" value="Мої записи" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="630" y="-120" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="auth_a1" target="reviews">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="-90" />
+              <mxPoint x="20" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="auth_a1" value="Ім’я користувача" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="60" y="-120" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-10" value="" style="endArrow=none;" edge="1" parent="1" source="main" target="register">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="391" y="-170" as="sourcePoint" />
+            <mxPoint x="329" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="register" value="Реєстрація" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7" parent="1" vertex="1">
+          <mxGeometry x="400" y="-230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="masters" target="masters">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.801;entryY=1.075;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cabinet_c1" target="cabinet_c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53lw-ioC29n_L8rf6pGG-17" value="" style="endArrow=none;" edge="1" parent="1" source="booking" target="cabinet_c3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="669" y="40" as="sourcePoint" />
+            <mxPoint x="704" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cabinet_c3" value="Залишити відгук" style="rounded=0;fillColor=#FFFFFF" parent="1" vertex="1">
+          <mxGeometry x="630" y="-80" width="160" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
