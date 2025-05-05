@@ -1,0 +1,157 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D1C4E9; /* М’який фіолетовий фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #AB47BC; /* Темно-фіолетовий для шапки */
+    color: #FFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #FFCA28; /* Жовтий акцент при наведенні */
+}
+
+.btn {
+    background-color: #FFCA28; /* Жовтий для кнопок */
+    color: #AB47BC; /* Темно-фіолетовий текст на кнопках */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FFB300; /* Темніший жовтий при наведенні */
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #CE93D8; /* Світліший фіолетовий для геройської секції */
+    color: #FFF;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Форма запису */
+#booking {
+    background-color: #EDE7F6; /* Дуже світлий фіолетовий для форми */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#booking h2 {
+    color: #AB47BC;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #CE93D8;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #FFCA28;
+    color: #AB47BC;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FFB300;
+}
+
+/* Footer */
+footer {
+    background-color: #AB47BC;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.social a {
+    color: #FFCA28;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    color: #FFF;
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+}
