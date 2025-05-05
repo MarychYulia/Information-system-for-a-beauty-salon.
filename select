@@ -1,0 +1,60 @@
+-- 1. Топ 5 клієнтів з найбільшою кількістю записів
+SELECT c.name, COUNT(a.appointment_id) AS total_visits
+FROM Client c
+JOIN Appointment a ON c.client_id = a.client_id
+GROUP BY c.client_id
+ORDER BY total_visits DESC
+LIMIT 5;
+
+-- 2. Середній вік клієнтів
+SELECT ROUND(AVG(TIMESTAMPDIFF(YEAR, birth_date, CURDATE())), 1) AS average_age
+FROM Client;
+
+-- 3. Кількість записів на кожну послугу
+SELECT s.name AS service_name, COUNT(a.appointment_id) AS total_appointments
+FROM Service s
+LEFT JOIN Appointment a ON s.service_id = a.service_id
+GROUP BY s.service_id;
+
+-- 4. Загальна сума платежів по кожному клієнту
+SELECT c.name, SUM(p.amount) AS total_spent
+FROM Client c
+JOIN Appointment a ON c.client_id = a.client_id
+JOIN Payments p ON a.appointment_id = p.appointment_id
+GROUP BY c.client_id;
+
+-- 5. Середній рейтинг кожного працівника
+SELECT e.name, ROUND(AVG(r.rating), 2) AS avg_rating
+FROM Employee e
+JOIN Reviews r ON e.employee_id = r.employee
+GROUP BY e.employee_id;
+
+-- 6. Послуги дорожчі за 300 грн
+SELECT name, price
+FROM Service
+WHERE price > 300;
+
+-- 7. Кількість клієнтів за місяцями народження
+SELECT MONTH(birth_date) AS birth_month, COUNT(*) AS clients_count
+FROM Client
+GROUP BY birth_month
+ORDER BY birth_month;
+
+-- 8. Сума платежів за кожен метод оплати
+SELECT payment_method, SUM(amount) AS total_by_method
+FROM Payments
+GROUP BY payment_method;
+
+-- 9. Працівники, які мають більше одного запису
+SELECT e.name, COUNT(a.appointment_id) AS total_appointments
+FROM Employee e
+JOIN Appointment a ON e.employee_id = a.employee_id
+GROUP BY e.employee_id
+HAVING total_appointments > 1;
+
+-- 10. Останні 5 записів клієнтів
+SELECT a.appointment_id, c.name AS client_name, a.datetime, a.status
+FROM Appointment a
+JOIN Client c ON a.client_id = c.client_id
+ORDER BY a.datetime DESC
+LIMIT 5;
